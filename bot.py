@@ -91,8 +91,10 @@ async def about(bot, message):
 @Bot.on_message(filters.sticker & filters.private)
 async def sticker(bot, message):
     await message.reply_sticker(
-    sticker="Here is your sticker id :{message.sticker.file_id}"
+    {message.sticker.file_id}
     )
+else:
+     await message.reply_text("This is not a sticker")
     
 print("Bot is now running, If any issues contact us through @XD_Botzsupport")
 
