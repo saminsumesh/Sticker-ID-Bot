@@ -93,8 +93,6 @@ async def sticker(bot, message):
     await message.reply_sticker(
     {message.sticker.file_id}
     )
-else:
-     await message.reply_text("This is not a sticker")
     
 print("Bot is now running, If any issues contact us through @XD_Botzsupport")
 
